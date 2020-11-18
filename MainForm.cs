@@ -20,7 +20,7 @@ namespace HR
             this.Close();
         }
 
-        private void MenuClick (Button btn)
+        private void SlidePanel (Button btn)
         {
             slidePanel.Top = btn.Top;
             slidePanel.Height = btn.Height;
@@ -28,31 +28,28 @@ namespace HR
            
         }
 
+    
 
-        public void BtnWorkers_Click(object sender, EventArgs e)
+        private void BtnWorkers_Click(object sender, EventArgs e)
         {
-            MenuClick(btnWorkers);
-           
-           
-            workersForm wf = new workersForm();
+            SlidePanel(btnWorkers);
 
+            WorkersForm wf = new WorkersForm();
+            wf.TopLevel = false;
+            centerPanel.Controls.Add(wf);
             wf.Show();
-
         }
 
-        private void BtnContracts_Click(object sender, EventArgs e)
-        {
-            MenuClick(btnContracts);
-        }
+
 
         private void BtnSalary_Click(object sender, EventArgs e)
         {
-            MenuClick(btnSalary);
+            SlidePanel(btnSalary);
         }
 
         private void BtnPosition_Click(object sender, EventArgs e)
         {
-            MenuClick(btnPosition);
+            SlidePanel(btnPosition);
         }
     }
 }

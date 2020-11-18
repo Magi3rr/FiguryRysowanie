@@ -8,12 +8,11 @@ using System.Windows.Forms;
 
 namespace HR
 {
-    public partial class WorkersForm : Form
+    public partial class PositionForm : Form
     {
-        public WorkersForm()
+        public PositionForm()
         {
             InitializeComponent();
         }
-
     }
 }
