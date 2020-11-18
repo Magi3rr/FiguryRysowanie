@@ -213,6 +213,7 @@
             // 
             // centerPanel
             // 
+            this.centerPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.centerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerPanel.Location = new System.Drawing.Point(250, 61);
             this.centerPanel.Name = "centerPanel";
