@@ -17,12 +17,12 @@ namespace HR
             InitializeComponent();
         }
 
-        private void btnCloseLog_Click(object sender, EventArgs e)
+        private void BtnCloseLog_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void btnLogIn_Click(object sender, EventArgs e)
+        private void BtnLogIn_Click(object sender, EventArgs e)
         {
             using (MainForm mf = new MainForm())
             {

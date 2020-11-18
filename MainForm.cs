@@ -15,36 +15,44 @@ namespace HR
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void BtnClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-        private void menuClick (Button btn)
+        private void MenuClick (Button btn)
         {
             slidePanel.Top = btn.Top;
             slidePanel.Height = btn.Height;
+            slidePanel.Visible = btn.Enabled;
+           
+        }
+
+
+        public void BtnWorkers_Click(object sender, EventArgs e)
+        {
+            MenuClick(btnWorkers);
+           
+           
+            workersForm wf = new workersForm();
+
+            wf.Show();
 
         }
 
-        private void btnWorkers_Click(object sender, EventArgs e)
+        private void BtnContracts_Click(object sender, EventArgs e)
         {
-            menuClick(btnWorkers);
+            MenuClick(btnContracts);
         }
 
-        private void btnContracts_Click(object sender, EventArgs e)
+        private void BtnSalary_Click(object sender, EventArgs e)
         {
-            menuClick(btnContracts);
+            MenuClick(btnSalary);
         }
 
-        private void btnSalary_Click(object sender, EventArgs e)
+        private void BtnPosition_Click(object sender, EventArgs e)
         {
-            menuClick(btnSalary);
-        }
-
-        private void btnPosition_Click(object sender, EventArgs e)
-        {
-            menuClick(btnPosition);
+            MenuClick(btnPosition);
         }
     }
 }

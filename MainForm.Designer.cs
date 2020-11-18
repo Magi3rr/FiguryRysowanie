@@ -117,7 +117,7 @@
             this.btnPosition.TabIndex = 2;
             this.btnPosition.Text = "Stanowiska";
             this.btnPosition.UseVisualStyleBackColor = false;
-            this.btnPosition.Click += new System.EventHandler(this.btnPosition_Click);
+            this.btnPosition.Click += new System.EventHandler(this.BtnPosition_Click);
             // 
             // btnContracts
             // 
@@ -133,7 +133,7 @@
             this.btnContracts.TabIndex = 2;
             this.btnContracts.Text = "Umowy";
             this.btnContracts.UseVisualStyleBackColor = false;
-            this.btnContracts.Click += new System.EventHandler(this.btnContracts_Click);
+            this.btnContracts.Click += new System.EventHandler(this.BtnContracts_Click);
             // 
             // btnSalary
             // 
@@ -149,7 +149,7 @@
             this.btnSalary.TabIndex = 2;
             this.btnSalary.Text = "Wynagrodzenia";
             this.btnSalary.UseVisualStyleBackColor = false;
-            this.btnSalary.Click += new System.EventHandler(this.btnSalary_Click);
+            this.btnSalary.Click += new System.EventHandler(this.BtnSalary_Click);
             // 
             // slidePanel
             // 
@@ -158,6 +158,7 @@
             this.slidePanel.Name = "slidePanel";
             this.slidePanel.Size = new System.Drawing.Size(10, 80);
             this.slidePanel.TabIndex = 3;
+            this.slidePanel.Visible = false;
             // 
             // btnWorkers
             // 
@@ -173,7 +174,7 @@
             this.btnWorkers.TabIndex = 2;
             this.btnWorkers.Text = "Pracownicy";
             this.btnWorkers.UseVisualStyleBackColor = false;
-            this.btnWorkers.Click += new System.EventHandler(this.btnWorkers_Click);
+            this.btnWorkers.Click += new System.EventHandler(this.BtnWorkers_Click);
             // 
             // topPanel
             // 
@@ -199,7 +200,7 @@
             this.btnCloseMF.TabIndex = 3;
             this.btnCloseMF.Text = "X";
             this.btnCloseMF.UseVisualStyleBackColor = false;
-            this.btnCloseMF.Click += new System.EventHandler(this.btnClose_Click);
+            this.btnCloseMF.Click += new System.EventHandler(this.BtnClose_Click);
             // 
             // label3
             // 
@@ -213,7 +214,7 @@
             // 
             // centerPanel
             // 
-            this.centerPanel.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.centerPanel.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.centerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.centerPanel.Location = new System.Drawing.Point(250, 61);
             this.centerPanel.Name = "centerPanel";

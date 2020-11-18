@@ -70,7 +70,7 @@
             this.btnLogIn.TabIndex = 3;
             this.btnLogIn.Text = "Zaloguj";
             this.btnLogIn.UseVisualStyleBackColor = false;
-            this.btnLogIn.Click += new System.EventHandler(this.btnLogIn_Click);
+            this.btnLogIn.Click += new System.EventHandler(this.BtnLogIn_Click);
             // 
             // linkLabel1
             // 
@@ -128,7 +128,7 @@
             this.btnClose.TabIndex = 3;
             this.btnClose.Text = "X";
             this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnCloseLog_Click);
+            this.btnClose.Click += new System.EventHandler(this.BtnCloseLog_Click);
             // 
             // label3
             // 
